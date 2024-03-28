@@ -2,8 +2,8 @@ import boto3
 import os
 from datetime import datetime
 
-s3 = boto3.client('s3')
-dynamodb = boto3.resource('dynamodb')
+s3 = boto3.client('s3', region_name='us-west-2')
+dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
 table = dynamodb.Table(os.environ['DYNAMODB_TABLE'])
 
 def save_metadata(key, size, upload_time):
