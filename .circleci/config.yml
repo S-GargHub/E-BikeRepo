@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Run unit tests
           command: |
-            pytest discover -s tests -p '*_test.py'
+            pytest -k "_test.py" tests/
       - store_test_results:
           path: test-reports
       - store_artifacts:
