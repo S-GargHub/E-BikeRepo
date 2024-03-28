@@ -15,8 +15,8 @@ class TestImageUploadFunction(unittest.TestCase):
         # Call the lambda handler function
         response = lambda_handler(event, None)
         
-        # Assert response status code - need to give permissions
-        self.assertEqual(response['statusCode'], 500) 
+        # Assert response status code
+        self.assertEqual(response['statusCode'], 200) 
         
 
 if __name__ == '__main__':
