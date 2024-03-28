@@ -8,10 +8,7 @@ This project was designed to seamlessly integrate a web application with various
 - Uploads image to AWS S3.
 - Extracts metadata such as time_created, key etc and stores it in AWS DynamoDB.
 
-## Technologies Used
-
 ## AWS Services Used
-‭
 - Amazon S3
 - AWS Lambda
 - Amazon DynamoDB
