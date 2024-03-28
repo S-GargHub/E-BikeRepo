@@ -32,3 +32,9 @@ jobs:
             pip install flask
             pip install boto3
             pip install pytest
+
+workflows:
+  build_test:
+    jobs:
+      - tests
+      - build
