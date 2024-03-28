@@ -7,8 +7,8 @@ class TestImageUploadFunction(unittest.TestCase):
         event = {
             'body': 'base64_encoded_image_data_here',
             'headers': {
-                'Content-Type': 'image/jpeg',  # Adjust content type if necessary
-                'Content-Disposition': 'attachment; filename="example_image.jpg"'  # Adjust filename if necessary
+                'Content-Type': 'image/jpeg',
+                'Content-Disposition': 'attachment; filename="example_image.jpg"'
             }
         }
         
