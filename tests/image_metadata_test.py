@@ -2,7 +2,7 @@ import os
 import pytest
 from datetime import datetime
 from unittest.mock import MagicMock
-from lambda_function import save_metadata
+from getImageMetadata import save_metadata
 
 @pytest.fixture
 def dynamodb_table():
