@@ -1,14 +1,25 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+# E-Bike Application - Upload image and manage metadata
 
+## Overview
+This project is a web application for an e-bike company, designed to facilitate the management of image uploads and metadata. It allows users to upload images to an AWS S3 bucket, and then stores the image metadata in an AWS DynamoDB table. The frontend is built with HTML and communicates with serverless lambda functions based on various triggers (API gateway and s3 upload)
 
-Hi there! Welcome to AWS Cloud9!
+## Features
+- Image upload functionality through a web interface.
+- Uploads image to AWS S3.
+- Extracts metadata such as time_created, key etc and stores it in AWS DynamoDB.
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
+## Technologies
+- **Frontend:** HTML and Python
+- **Backend:** Python, Serverless Lamda
+- **Database:** AWS DynamoDB
+- **Storage:** AWS S3
+- **Testing:** Pytest
+- **Authentication:** Cognito
+- **Deployment:** CircleCI and AWS Amplify
 
-Happy coding!
+### Prerequisites
+- Python 3.x
+- AWS account and configure IAM user with required permissions
+- Flask
+- Boto3
+- Pytest (for testing)
