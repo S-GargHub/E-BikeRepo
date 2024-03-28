@@ -1,5 +1,24 @@
 version: 2.1
 jobs:
+
+  tests:
+    docker:
+      - image: circleci/python:3.8
+    steps:
+      - checkout
+      - run:
+          name: Install Python dependencies
+          command: |
+            echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
+            pip install -r requirements.txt
+      - run:
+          name: Run unit tests
+          command: |
+            pytest discover -s tests -p '*_test.py'
+      - store_test_results:
+          path: test-reports
+      - store_artifacts:
+          path: test-reports
   build:
     docker:
       - image: circleci/python:3.8 
