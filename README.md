@@ -1,7 +1,7 @@
 # E-Bike Application - Upload image and manage metadata
 
 ## Overview
-This project is a web application for an e-bike company, designed to facilitate the management of image uploads and metadata. It allows users to upload images to an AWS S3 bucket, and then stores the image metadata in an AWS DynamoDB table. The frontend is built with HTML and communicates with serverless lambda functions based on various triggers (API gateway and s3 upload)
+This project was designed to seamlessly integrate a web application with various AWS services, facilitating image upload, metadata extraction, and storage. I used S3 for secure and reliable image storage, DynamoDB as a key-value pair database to house metadata, IAM roles to manage access permissions, and Lambda functions to execute code triggered by events such as image uploads.
 
 ## Features
 - Image upload functionality through a web interface.
@@ -12,18 +12,18 @@ This project is a web application for an e-bike company, designed to facilitate 
 
 ## AWS Services Used
 ‭
-
-- **Frontend:** HTML and Python
-- **Backend:** Python, Serverless Lamda
-- **Database:** AWS DynamoDB
-- **Storage:** AWS S3
-- **Testing:** Pytest
-- **Authentication:** Cognito
-- **Deployment:** CircleCI and AWS Amplify
+- Amazon S3
+- AWS Lambda
+- Amazon DynamoDB
+- IAM Roles
+- Lambda function
+- AWS Amplify
+- AWS Cognito
 
 ### Prerequisites
 - Python 3.x
-- AWS account and configure IAM user with required permissions
+- AWS account
 - Flask
 - Boto3
 - Pytest (for testing)
+- CircleCI
