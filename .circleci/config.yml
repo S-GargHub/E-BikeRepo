@@ -37,4 +37,4 @@ workflows:
   build_test:
     jobs:
       - build
-      - test
+      - tests
