@@ -8,7 +8,11 @@ This project is a web application for an e-bike company, designed to facilitate 
 - Uploads image to AWS S3.
 - Extracts metadata such as time_created, key etc and stores it in AWS DynamoDB.
 
-## Technologies
+## Technologies Used
+
+## AWS Services Used
+‭
+
 - **Frontend:** HTML and Python
 - **Backend:** Python, Serverless Lamda
 - **Database:** AWS DynamoDB
